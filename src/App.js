@@ -1,17 +1,15 @@
 import './App.css';
 import NavBar from './Components/NavBar';
+import ItemListContainer from './Components/ItemListContainer';
 
+  
 function App() {
   return (
     <>
       <NavBar />
       <div className="App">
       <header className="App-header">
-        <img
-          src={"https://res.cloudinary.com/ojedaweb/image/upload/v1643766592/TIENDA-ONLINE_bulpsg_d7gmnr.png"}
-          className="App-logo"
-          alt="logo" />
-        <h1>Shop OJEDA</h1>
+        <ItemListContainer title='ItemListContainer Component' />
       </header>
       </div>
     </>
