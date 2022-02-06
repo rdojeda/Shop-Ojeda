@@ -2,7 +2,7 @@ import React from 'react';
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import { CartWidget } from './CartWidget';
 
-const NavBar = () => {
+export const NavBar = () => {
     return (
       <>
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
@@ -26,4 +26,4 @@ const NavBar = () => {
 
 };
 
-export default NavBar;
+
