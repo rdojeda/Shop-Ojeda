@@ -1,7 +1,6 @@
 import './App.css';
 import { NavBar } from './Components/NavBar';
 import { ItemListContainer } from './Components/ItemListContainer';
-import { ItemCount } from './Components/ItemCount';
   
 function App() {
   return (

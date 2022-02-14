@@ -4,11 +4,14 @@ export const ItemCount = ({ stock, initial }) => {
   const [count, setCount] = useState(0);
 
   const handleAdd = () => {
-    count >= stock ? alert("STOCK AGOTADO") : setCount(count + 1);
+    //count >= stock ? alert("STOCK AGOTADO") : setCount(count + 1);
+    if(count < stock) { setCount(count + 1) }
+    
   };
 
   function handleSubstract() {
-    count <= initial ? alert("STOCK EN CERO") : setCount(count - 1);
+    //count <= initial ? alert("STOCK EN CERO") : setCount(count - 1);
+    if (count > initial) {setCount(count -1) }
   }
 
   return (
@@ -21,16 +24,16 @@ export const ItemCount = ({ stock, initial }) => {
           <button
             className="btn btn-primary me-md-2"
             type="button"
-            onClick={handleAdd}
+            onClick={handleSubstract}
           >
-            +
+            -
           </button>
           <button
             className="btn btn-success"
             type="button"
-            onClick={handleSubstract}
+            onClick={handleAdd}
           >
-            -
+            +
           </button>
         </div>
         <div className="-grid gap-2 d-md-flex justify-content-md-center mt-2">
