@@ -1,8 +1,7 @@
-import { Cart4 } from 'react-bootstrap-icons';
 
 export const CartWidget = () => {
     return (
-      <Cart4 size={48}/>
+      <h1> DX Shop Sports  <i className="fas fa-running"></i></h1>
   );
 };
 
