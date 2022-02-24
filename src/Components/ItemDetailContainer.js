@@ -22,7 +22,12 @@ export const ItemDetailContainer = () => {
     
   }, [id]);
   
-  
+  const getItem = (id) => {
+    let item = productos.find(element => element.id === id)
+    setProducto(item) 
+   
+  }
+
   return (
     <>
       {isLoading ? (
@@ -31,7 +36,7 @@ export const ItemDetailContainer = () => {
         <>
           <h1>{title}</h1>
           <div className="container mt-5">
-              <ItemDetail {...detail[id]} />
+              <ItemDetail {...detail.getItem(id)} />
           </div>
         </>
       )}

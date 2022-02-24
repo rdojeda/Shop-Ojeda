@@ -1,6 +1,6 @@
 
 export const RemerasPage = () => {
   return (
-        <h1>RemerasPage</h1>
+        <h1 className="text-center text-uppercase mt-5">Remeras Page</h1>
   )
 }
