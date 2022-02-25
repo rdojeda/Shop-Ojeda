@@ -1,4 +1,4 @@
-# Shop Sports
+# DX Shop Sports
 
 Shop Sports es un proyecto de e-commerce diseñado y desarrollado para el Proyecto Final del Módulo III REACT de la carrera de Fullstack Developer en CoderHouse
 
